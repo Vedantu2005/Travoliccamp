@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Beach Camping Campaigns in India | Travolic</title>
+    <meta name="description" content="Discover the best beach camping experiences in India with Travolic. Book your perfect getaway at Alibaug, Pawna Lake, and more!">
+    <link rel="stylesheet" href="campaigns.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Travolic",
+      "url": "https://www.travolic.com",
+      "description": "Explore the best beach camping experiences with Travolic.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Travolic Logo" class="logo-img">
+            <h1 class="logo-text">Travolic</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="campaigns.html" class="active">Campaigns</a></li>
+            <li><a href="cottage.html">Cottage</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html" >About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="header-content">
+            <h1>Our Camping Campaigns</h1>
+            <p>Find your perfect beach camping experience</p>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="search-container">
+            <form id="search-form" class="campaign-search">
+                <div class="search-input">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Location" id="location">
+                </div>
+                <div class="search-input">
+                    <i class="fas fa-calendar"></i>
+                    <input type="date" id="check-in">
+                </div>
+                
+                <div class="search-input">
+                    <i class="fas fa-users"></i>
+                    <select id="guests">
+                        <option value="">Number of Guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-button">Search Campaigns</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="campaigns-grid">
+        <div class="campaign-card" data-id="1">
+            <img src="./assets/camp-2.jpg" alt="Sunset Beach Camp">
+            <div class="campaign-content">
+                <h3>Pawna Lake Camping</h3>
+                <p>Experience breathtaking sunsets at our premium beachfront location</p>
+                <div class="campaign-details">
+                    <span><i class="fas fa-map-marker-alt"></i> Lonavala</span>
+                    <span><i class="fas fa-star"></i> 4.9</span>
+                    <span><i class="fas fa-rupee-sign"></i><b> 999/night</b></span>
+                </div>
+                <button class="book-button" onclick="openBookingModal(1)">Book Now</button>
+            </div>
+        </div>
+
+       
+
+        <div class="campaign-card" data-id="3">
+            <img src="assets/card-alibaug.jpg" alt="Coastal Haven">
+            <div class="campaign-content">
+                <h3>Alibaug Beach Camping</h3>
+                <p>Family-friendly camping with modern facilities</p>
+                <div class="campaign-details">
+                    <span><i class="fas fa-map-marker-alt"></i> Alibaug</span>
+                    <span><i class="fas fa-star"></i> 4.7</span>
+                    <span><i class="fas fa-rupee-sign"></i><b>999/night</b></span>
+                </div>
+                <button class="book-button" onclick="openBookingModal(3)">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+
+ <div id="booking-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Book Your Stay</h2>
+        <form id="sheetdb-form" method="post" action="https://sheetdb.io/api/v1/qsnmllrsk169j">
+            <input type="hidden" id="campaign-id" name="data[campaign_id]">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="data[name]" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="data[email]" required>
+            </div>
+
+            <div class="form-group">
+                <label for="booking-date">Date</label>
+                <div class="date-inputs">
+                    <input type="date" id="date" name="data[date]" required>
+                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="guests-count">Number of Guests</label>
+                <select id="guests-count" name="data[guests]" required>
+                    <option value="">Select</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4+">4+ Guests</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Contact Number</label>
+                <input type="tel" id="phone" name="data[phone]" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Select Location</label>
+                <select id="location" name="data[location]" required>
+                    <option value="">Select</option>
+                    <option value="Alibaug">Alibaug</option>
+                    <option value="Pawna Lake">Pawna Lake</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="bookmodal-button">Confirm Booking</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/917820858758" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Travolic</h3>
+                <p>Making beach camping accessible and unforgettable.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="campaigns.html">Campaigns</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email:travolic55@gmail.com</p>
+                <p>Phone: +91-7820858758 <br> </p>
+                   <p> <span style="margin-left: 55px;">+91-9321040478</span></p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1Bn7uW5WPs/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/travolic_camp?igsh=NWRybWdyNjF6eWlq"><i class="fab fa-instagram"></i></a>
+                    <a href="http://wa.me/917820858758"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Travollic. All rights reserved.</p>
+        </div>
+    </footer>
+     <script>
+        // Modal and Form Functionality
+        const modal = document.getElementById('booking-modal');
+        const closeModal = document.querySelector('.close-modal');
+        const campaignIdInput = document.getElementById('campaign-id');
+        
+        // Function to open the booking modal
+        function openBookingModal(campaignId) {
+            document.getElementById("booking-modal").style.display = "flex";
+            campaignIdInput.value = campaignId; // Set campaign ID dynamically
+        }
+        
+        // Close modal functionality
+        closeModal.onclick = function() {
+            document.getElementById("booking-modal").style.display = "none";
+        };
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                document.getElementById("booking-modal").style.display = "flex";
+            }
+        };
+        
+
+        // Form submission handling
+        document.getElementById('sheetdb-form').addEventListener("submit", function (e) {
+            e.preventDefault();
+        
+            fetch(this.action, {
+                method: "POST",
+                body: new FormData(this),
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert("Booking confirmed! Redirecting...");
+                this.reset(); // Clears the form after submission
+                window.location.href = 'page2.html'; // Redirect to a Thank You page
+            })
+            .catch(error => {
+                alert("An error occurred. Please try again.");
+                console.error(error);
+            });
+        });
+        </script>
+        <script src="campaigns.js"></script>
+</body>
+</html>
