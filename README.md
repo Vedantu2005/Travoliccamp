@@ -35,17 +35,37 @@ This website serves as a digital brochure and booking gateway for Travolic’s b
 
 ## 🧑‍💻 Developed By
 - **Vedant Inamdar** – Web Development
+## 📁 File Structure
 
-## 📂 Folder Structure
 ```bash
-travolic-beach-campaign/
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-│   ├── images/
-│   └── icons/
-└── README.md
+Travoliccamp/
+│
+├── assets/                 # Static images and media
+├── public/                 # Public files (optional)
+│
+├── about.js                # About page logic
+├── activities.js           # Activities information
+├── alibag.js               # Alibag campaign scripts
+├── blog.js                 # Blog section scripts
+├── campaigns.js           # Campaign listings
+├── contact.js              # Contact form logic
+├── cottage.js              # Cottage stay section
+├── index.html              # Homepage
+├── index.js                # Homepage JS logic
+├── javascript/             # Additional JS files (optional folder)
+├── main.js                 # Entry point script
+│
+├── ourstory.html           # Our Journey/About Us
+├── package.json            # Node.js config (optional if used)
+├── package-lock.json       # Dependency lock file
+│
+├── pawnalake.js            # Pawna Lake camping logic
+├── sitemap.xml             # Sitemap for SEO
+├── style.css               # Main styling
+├── tentstay.html           # Tent stay details
+├── page2.html              # Extra page
+├── campingbg/              # Camping background media
+├── unzipper/               # Utility folder
 
 
 
