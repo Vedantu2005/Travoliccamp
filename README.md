@@ -22,8 +22,6 @@ This website serves as a digital brochure and booking gateway for Travolic’s b
 - (or React + Tailwind if you're using that)
 - **Deployment**: GitHub Pages / Vercel / Netlify
 
-## 📸 Screenshots
-
 ## 📷 Screenshots
 ![Screenshot 2025-04-13 232634](https://github.com/user-attachments/assets/13bb0516-c13f-4c5d-b59e-689408a92390)
 ![Screenshot 2025-04-13 232959](https://github.com/user-attachments/assets/b119c0ec-aaba-4738-bb9a-bc1eda91a317)
