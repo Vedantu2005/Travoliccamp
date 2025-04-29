@@ -1,4 +1,4 @@
-# 🌴 Travolic – Beach Camping Experience
+# Introducing Our Beach Camping Booking Website! 
 
 What began as a passion project has evolved into a full-fledged platform — TravolicCamp.in is now live, delivering unforgettable private beach camping experiences across stunning locations. 🚀
 
@@ -6,6 +6,7 @@ Built with user experience, automation, and mobile responsiveness in mind, the p
 
 
 ## 🔑 Key Features
+
 ✅ Discover scenic camping spots with tents, bonfire, live music, BBQ, and more
 ✅ Simple, attractive booking form for quick reservations
 ✅ Instant confirmation emails sent to users
@@ -19,8 +20,6 @@ Built with user experience, automation, and mobile responsiveness in mind, the p
  - Data Management – Excel integration for booking records
  - Notifications – Auto-message system for users and admin
 
-
-
 ## 📷 Screenshots
 ![Screenshot 2025-04-13 232634](https://github.com/user-attachments/assets/13bb0516-c13f-4c5d-b59e-689408a92390)
 ![Screenshot 2025-04-13 232959](https://github.com/user-attachments/assets/b119c0ec-aaba-4738-bb9a-bc1eda91a317)
@@ -31,6 +30,7 @@ Built with user experience, automation, and mobile responsiveness in mind, the p
 🔗 [travolic-camping.vercel.app](https://travoliccamp.in/?i=1)
 
 ## 🧑‍💻 Developed By
+
 - **Ramkrushna Shinde** –  Designed the vibrant frontend using HTML and CSS. 🎨 
 - **Vedant Inamdar** –  Enhanced interactivity and UI with JavaScript. 💻
 - **Abhijit Ugalmogale** - Built the backend for booking management and automated messaging. 📩
