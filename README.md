@@ -27,7 +27,7 @@ Built with user experience, automation, and mobile responsiveness in mind, the p
 
 ## 🚀 Live Website
 
-🔗 [travolic-camping.vercel.app](https://travoliccamp.in/?i=1)
+🔗 [travoliccamp.in](https://travoliccamp.in/?i=1)
 
 ## 🧑‍💻 Developed By
 
